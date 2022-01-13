@@ -11,6 +11,9 @@ jobs:
     name: CI pipeline
     runs-on: ubuntu-latest
 
+    container:
+      image: ubuntu:latest
+
     services:
       postgres:
         image: postgres
