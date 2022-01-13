@@ -29,7 +29,7 @@
                   <DataStoreSettings>
                     <option name="generateDdlType" value="CREATE_AND_UPDATE" />
                     <option name="supportedTypes">
-                      <option value="postgres" />
+                      <option value="hsql" />
                     </option>
                   </DataStoreSettings>
                 </value>
@@ -50,6 +50,15 @@
           <option name="host" value=".jmix/hsqldb" />
           <option name="url" value="jdbc:hsqldb:file:.jmix/hsqldb/petclinic-empty-6" />
           <option name="user" value="sa" />
+        </SavedDbProperties>
+        <SavedDbProperties>
+          <option name="databaseName" value="petclinic" />
+          <option name="dbType" value="postgres" />
+          <option name="dbmsVersion" />
+          <option name="host" value="localhost" />
+          <option name="pass" value="postgres" />
+          <option name="url" value="jdbc:postgresql://localhost/petclinic" />
+          <option name="user" value="postgres" />
         </SavedDbProperties>
       </list>
     </option>
