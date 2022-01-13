@@ -60,7 +60,6 @@ dependencies {
 }
 
 test {
-//    systemProperty 'spring.profiles.active', System.getenv("SPRING_PROFILES_ACTIVE")
     useJUnitPlatform()
 
     testLogging {
