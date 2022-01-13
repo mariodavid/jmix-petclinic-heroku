@@ -60,6 +60,10 @@ dependencies {
 }
 
 test {
-    systemProperty 'spring.profiles.active', System.getenv("SPRING_PROFILES_ACTIVE")
+//    systemProperty 'spring.profiles.active', System.getenv("SPRING_PROFILES_ACTIVE")
     useJUnitPlatform()
+
+    testLogging {
+        events "PASSED", "SKIPPED", "FAILED", "STANDARD_OUT", "STANDARD_ERROR"
+    }
 }
