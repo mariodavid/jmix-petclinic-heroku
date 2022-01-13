@@ -33,9 +33,10 @@ jobs:
 
       - name: Run tests
         env:
-          MAIN_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres
-          MAIN_DATASOURCE_USERNAME: postgres
-          MAIN_DATASOURCE_PASSWORD: postgres
+          SPRING_PROFILES_ACTIVE: ci
+#          MAIN_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres
+#          MAIN_DATASOURCE_USERNAME: postgres
+#          MAIN_DATASOURCE_PASSWORD: postgres
         run: ./gradlew test
 
       - name: Publish Test Report
