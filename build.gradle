@@ -48,14 +48,15 @@ dependencies {
     implementation "io.jmix.translations:jmix-translations-zh-cn"
     implementation "io.jmix.translations:jmix-translations-ru"
 
+
+    implementation "org.postgresql:postgresql"
+
     testImplementation 'org.assertj:assertj-core:3.11.1'
     testImplementation 'org.mockito:mockito-core:3.2.4'
     testImplementation 'org.mockito:mockito-junit-jupiter:3.2.4'
 
 
     testImplementation 'io.jmix.ui:jmix-ui-test-assist'
-    implementation("org.hsqldb:hsqldb")
-    implementation("org.postgresql:postgresql")
 }
 
 test {
